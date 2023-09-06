@@ -41,7 +41,7 @@ Calendar Extension is a JavaScript library that allows you to easily integrate a
 
 ## Examples
 ...
-<body>
+`<body>
     <div id="calendar_nav">
     </div>
     <br>
@@ -61,7 +61,7 @@ Calendar Extension is a JavaScript library that allows you to easily integrate a
         const navbutts2 = CalTemplate.navButtons(DF.startMonth.getShortDate(), true);
         document.querySelector('#calendar_nav_down').appendChild(navbutts2);
         </script>
-</body>
+</body>`
 ...
 
 ## Contributing
