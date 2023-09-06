@@ -43,15 +43,12 @@ Calendar Extension is a JavaScript library that allows you to easily integrate a
 ...
 <body>
     <div id="calendar_nav">
-        
     </div>
     <br>
     <div id="calendar_body">
-        
     </div>
     <br>
     <div id="calendar_nav_down">
-        
     </div>
     <script>
         // Define an instance of DayFlow object
@@ -72,5 +69,5 @@ Calendar Extension is a JavaScript library that allows you to easily integrate a
 - You can use and modify this code as you want
 
 
-## Licence
+## License
 This project is licensed under the GNU Public License (GPL V3);
