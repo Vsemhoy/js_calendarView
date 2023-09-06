@@ -40,8 +40,9 @@ Calendar Extension is a JavaScript library that allows you to easily integrate a
 - `index.html` : contains base style definition and demo code.
 
 ## Examples
-<code>
-<body>
+<pre><code>
+...
+```<body>
     <div id="calendar_nav">
     </div>
     <br>
@@ -61,8 +62,9 @@ Calendar Extension is a JavaScript library that allows you to easily integrate a
         const navbutts2 = CalTemplate.navButtons(DF.startMonth.getShortDate(), true);
         document.querySelector('#calendar_nav_down').appendChild(navbutts2);
     </script>
-</body>
-</code>
+</body>```
+...
+</code></pre>
 
 ## Contributing
 - Developed by `Teftele` - https://github.com/Vsemhoy/
