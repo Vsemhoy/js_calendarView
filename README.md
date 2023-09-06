@@ -40,3 +40,37 @@ Calendar Extension is a JavaScript library that allows you to easily integrate a
 - `index.html` : contains base style definition and demo code.
 
 ## Examples
+...
+<body>
+    <div id="calendar_nav">
+        
+    </div>
+    <br>
+    <div id="calendar_body">
+        
+    </div>
+    <br>
+    <div id="calendar_nav_down">
+        
+    </div>
+    <script>
+        // Define an instance of DayFlow object
+        const DF = new DayFlow('#calendar_body');
+        // Define and place navigation buttons on the top of the page
+        const navbutts = CalTemplate.navButtons(DF.endMonth.getShortDate());
+        document.querySelector('#calendar_nav').appendChild(navbutts);
+        // Define and place navigation buttons on the bottom of the page 
+        // Second param as TRUE allows to scroll page down when click
+        const navbutts2 = CalTemplate.navButtons(DF.startMonth.getShortDate(), true);
+        document.querySelector('#calendar_nav_down').appendChild(navbutts2);
+        </script>
+</body>
+...
+
+## Contributing
+- Developed by `Teftele` - https://github.com/Vsemhoy/
+- You can use and modify this code as you want
+
+
+## Licence
+This project is licensed under the GNU Public License (GPL V3);
