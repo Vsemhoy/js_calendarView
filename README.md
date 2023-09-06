@@ -2,6 +2,8 @@
 Renders the days of the selected calendar months as consecutive lines. Includes transition methods and calendar extensions.
 Calendar Extension is a JavaScript library that allows you to easily integrate a customizable calendar component into your web application. It provides features for rendering and navigating through calendar months.
 
+![Calendar](calendar_view.png)
+
 ## Table of Contents
 
 - [Features](#features)
