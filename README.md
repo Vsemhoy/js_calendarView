@@ -40,6 +40,7 @@ Calendar Extension is a JavaScript library that allows you to easily integrate a
 - `index.html` : contains base style definition and demo code.
 
 ## Examples
+<code>
 <body>
     <div id="calendar_nav">
     </div>
@@ -61,6 +62,7 @@ Calendar Extension is a JavaScript library that allows you to easily integrate a
         document.querySelector('#calendar_nav_down').appendChild(navbutts2);
     </script>
 </body>
+</code>
 
 ## Contributing
 - Developed by `Teftele` - https://github.com/Vsemhoy/
