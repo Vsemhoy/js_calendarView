@@ -63,7 +63,7 @@ class DayFlow {
                 DateUtils.changeAddressBar(DayFlow.endParam,
                     calledMonth);
                 this.renderMonth(calledMonth, true);
-
+                this.triggerMoveEvent();
             };
 
             if (e.target.closest(".cl-com-prevexpand")){
@@ -75,7 +75,7 @@ class DayFlow {
                 DateUtils.changeAddressBar(DayFlow.startParam,
                     calledMonth);
                 this.renderMonth(calledMonth, false);
-
+                this.triggerMoveEvent();
             };
             
             if (e.target.closest(".cl-com-next")){
@@ -91,6 +91,7 @@ class DayFlow {
                     this.endMonth.getShortDate());
                     DayFlow.dateArray.push(calledMonth);
                 this.renderMonth(calledMonth);
+                this.triggerMoveEvent();
             };
 
             if (e.target.closest(".cl-com-prev")){
@@ -106,6 +107,7 @@ class DayFlow {
                     this.endMonth.getShortDate());
                     DayFlow.dateArray.push(calledMonth);
                 this.renderMonth(calledMonth);
+                this.triggerMoveEvent();
             };
 
             if (e.target.closest(".cl-nav")){
@@ -117,6 +119,7 @@ class DayFlow {
                 }
             };
         });
+
 
         document.addEventListener('change', (e) => {
             e.preventDefault();
@@ -135,9 +138,29 @@ class DayFlow {
                     this.endMonth.getShortDate());
                     DayFlow.dateArray.push(calledMonth);
                 this.renderMonth(calledMonth);
+                this.triggerMoveEvent();
             }
         });
     }
+
+
+    /**
+    * Trigger the move or expand event.
+    */
+    triggerMoveEvent() {
+        if (typeof this.movedCallback === 'function') {
+            this.movedCallback(this);
+        }
+    }
+
+    /**
+     *
+     * @param {Function} callback - The callback function to be called when the user changed or expand calendar.
+     */
+    onMoved(callback) {
+        this.movedCallback = callback;
+    }
+
 
 
     renderMonth(date, setOnStart = false) {

@@ -98,6 +98,13 @@
 
         const navbutts2 = CalTemplate.navButtons(DF.startMonth.getShortDate(), true);
         document.querySelector('#calendar_nav_down').appendChild(navbutts2);
+
+        function callBackDemo(dayflow)
+        {
+            console.log('CallBack works!');
+        };
+
+        DF.onMoved(callBackDemo);
         </script>
 </body>
 </html>
