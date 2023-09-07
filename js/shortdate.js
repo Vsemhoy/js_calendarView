@@ -264,6 +264,59 @@ class ShortDate {
         return lastDay;
     }
 
+    
+    /**
+     * Get the last date of the current month.
+     *
+     * @param {boolean} asString - If true, returns the result as a formatted string in "YYYY-MM-DD" format; if false, returns a Date object.
+     * @param {string} delimiter - The delimiter used in the formatted string (ignored if asString is false).
+     * @returns {string|Date} - The last date of the current month, either as a formatted string or a Date object, depending on the 'asString' parameter.
+     */
+    getLastDate(asString = true) {
+        // Calculate the last day of the current month
+        const lastDay = new Date(this.year, this.month, 0);
+        if (this.debug) {
+            console.log(
+                'object id: ' + this.id,
+                this.debugDelimeter,
+                'method: getLastDayOfMonth',
+                this.debugDelimeter,
+                'result: ' + lastDay
+            );
+        }
+        if (asString){
+            return this.year + this.delimeter + this.month + this.delimeter + (lastDay.getDate()).toString().padStart(2, '0');
+        }
+        return lastDay;
+    }
+
+
+    /**
+     * Get the first date of the current month.
+     *
+     * @param {boolean} asString - If true, returns the result as a formatted string in "YYYY-MM-DD" format; if false, returns a Date object.
+     * @param {string} delimiter - The delimiter used in the formatted string (ignored if asString is false).
+     * @returns {string|Date} - The first date of the current month, either as a formatted string or a Date object, depending on the 'asString' parameter.
+     */
+    getFirstDate(asString = true) {
+        // Calculate the last day of the current month
+        const firstday = new Date(this.year, this.month, 1);
+        if (this.debug) {
+            console.log(
+                'object id: ' + this.id,
+                this.debugDelimeter,
+                'method: getLastDayOfMonth',
+                this.debugDelimeter,
+                'result: ' + firstday
+            );
+        }
+        if (asString){
+            return this.year + this.delimeter + this.month + this.delimeter + '01';
+        }
+        return lastDay;
+    }
+
+    
 
     /**
      * Calculate the last date of the previous month based on the current date.
