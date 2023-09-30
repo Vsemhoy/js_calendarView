@@ -36,9 +36,9 @@ Calendar Extension is a JavaScript library that allows you to easily integrate a
 
 ## Contents
 - `dayflow.js` DayFlow.class : provide a comprehensive solution for managing and rendering calendar data, as well as handling user interactions for navigating the calendar. The code is well-organized and includes error handling for cases like selecting a non-existent calendar container or dealing with invalid date ranges.
-- `shortdate.js` ShortDate.class : provides a human-readable simplified date object containing a bunch of convenience methods for manipulating dates. Created primarily to solve the problem of a zero date index.
-- `shortdate.js` DateUtils.class : provides functionality to manipulate URL params, and contains month color definitions.
-- `caltemplate.js` CalTemplate.class : contains various static methods for generating and manipulating calendar templates. You have to modify or replace all this template to customize your application.
+- ------------ ShortDate.class : provides a human-readable simplified date object containing a bunch of convenience methods for manipulating dates. Created primarily to solve the problem of a zero date index.
+- ------------ DateUtils.class : provides functionality to manipulate URL params, and contains month color definitions.
+- ------------ CalTemplate.class : contains various static methods for generating and manipulating calendar templates. You have to modify or replace all this template to customize your application.
 - `index.html` : contains base style definition and demo code.
 
 ## Examples
