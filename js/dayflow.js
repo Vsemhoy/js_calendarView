@@ -146,7 +146,7 @@ class DayFlow {
                     DayFlow.dateArray.push(calledMonth);
                 this.renderMonth(calledMonth);
                 this.triggerMoveEvent();
-                let row = document.querySelector('.row_today');
+                let row = document.querySelector('#row_today');
                 if (row != null){
                     row.scrollIntoView({ behavior: "smooth", block: "center", inline: "center" });
                 }
