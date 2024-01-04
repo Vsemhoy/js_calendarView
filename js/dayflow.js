@@ -542,7 +542,7 @@ class ShortDate {
             );
         }
         if (asString){
-            return this.year + this.delimeter + this.month + this.delimeter + (lastDay.getDate()).toString().padStart(2, '0');
+            return this.year + this.delimeter + this.month.toString().padStart(2,'0') + this.delimeter + (lastDay.getDate()).toString().padStart(2, '0');
         }
         return lastDay;
     }
@@ -557,20 +557,20 @@ class ShortDate {
      */
     getFirstDate(asString = true) {
         // Calculate the last day of the current month
-        const firstday = new Date(this.year, this.month, 1);
+        const firstDay = new Date(this.year, this.month, 1);
         if (this.debug) {
             console.log(
                 'object id: ' + this.id,
                 this.debugDelimeter,
                 'method: getLastDayOfMonth',
                 this.debugDelimeter,
-                'result: ' + firstday
+                'result: ' + firstDay
             );
         }
         if (asString){
-            return this.year + this.delimeter + this.month + this.delimeter + '01';
+            return this.year + this.delimeter + this.month.toString().padStart(2,'0') + this.delimeter + '01';
         }
-        return lastDay;
+        return firstDay;
     }
 
     
